@@ -14,15 +14,15 @@ const ValidateFromTo = () => {
               rules={[
                 ({ getFieldValue, setFields }) => ({
                   validator(_, value) {
-                    const valueEnd = getFieldValue("monthly_salary_to");
+                    const valueEnd = getFieldValue("from_two");
                     if (valueEnd) {
                       setFields([
-                        { name: "monthly_salary_to", errors: undefined },
+                        { name: "from_two", errors: undefined },
                       ]);
                     } else {
                       setFields([
                         {
-                          name: "monthly_salary_to",
+                          name: "from_two",
                           errors: ["requiredMessage"],
                         },
                       ]);
@@ -46,20 +46,20 @@ const ValidateFromTo = () => {
         <Col>
           <Row>
             <Form.Item
-              name="forom_two"
+              name="from_two"
               label={<div>&nbsp;</div>}
               rules={[
                 ({ getFieldValue, setFields }) => ({
                   validator(_, value) {
-                    const valueStart = getFieldValue("monthly_salary_from");
+                    const valueStart = getFieldValue("form_one");
                     if (valueStart) {
                       setFields([
-                        { name: "monthly_salary_from", errors: undefined },
+                        { name: "form_one", errors: undefined },
                       ]);
                     } else {
                       setFields([
                         {
-                          name: "monthly_salary_from",
+                          name: "form_one",
                           errors: ["requiredMessage"],
                         },
                       ]);
