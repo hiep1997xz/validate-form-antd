@@ -1,10 +1,12 @@
 import React from "react";
-import ValidateFromTo from "./components/ValidateFromTo";
+import DatePickerAntd from "./components/datepicker/DatePickerAntd";
+import ValidateFromTo from "./components/input/ValidateFromTo";
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <ValidateFromTo />
+      <DatePickerAntd />
     </div>
   );
 }
